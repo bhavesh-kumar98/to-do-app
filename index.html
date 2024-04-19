@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/b6500bc2ee.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./src/style/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="todo-app">
+      <div class="title"> <i class="fa-solid fa-list-check"></i>
+        <h2>To Do List</h2>
+      </div>
+
+      <div class="row">
+        <input id="addTaskInput" type="text" name="" placeholder="Add Task"><input id="saveIndex" type="hidden"
+          value=""><button id="addTaskBtn" type="submit">Add</button><button id="saveTaskBtn"
+          type="submit">Save</button><button id="deleteAllBtn" type="submit">Delete All</button>
+      </div>
+      <div class="search">
+        <input id="searchTextBox" type="text" name="" placeholder="search task"><button class="btn" id="searchClose"
+          type="submit"></button>
+      </div>
+
+      <p id="alertAdd">please enter the item</p>
+      <div class="tasks">
+
+        <!-- <div class="task">
+                    <div class="task-row">
+                      <p class="text"><span class="taskNum">${index + 1}.</span>${element}</p>
+                    </div>
+                    <div class="update-list" onclick="editItem(${index})" style="background-image: url(&    quot;../src/assets/update-icon.svg&quot;);"></div>
+                    <div class="xMark deleteBtn" onclick="deleteItem(${index})" style="background-image: url(&quot;../src/assets/circle-xmark.svg&quot;);"></div>
+          </div> -->
+
+      </div>
+
+    </div>
+  </div>
+  <script src="./src/main.js"></script>
+</body>
+
+</html>
