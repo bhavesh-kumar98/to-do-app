@@ -64,10 +64,15 @@ function showTask() {
     <div class="task-row">
     <p class="text"><span class="taskNum">${index + 1}.</span>${element}</p>
     </div>
-    <div class="update-list" onclick="editItem(${index})" style="background-image: url(&quot;../src/assets/update-icon.svg&quot;);"></div>
-    <div class="xMark deleteBtn" onclick="deleteItem(${index})" style="background-image: url(&quot;../src/assets/circle-xmark.svg&quot;);"></div>
+    <div class="update-list" onclick="editItem(${index})" style="background-image: url(&quot;./src/assets/update-icon.svg&quot;);"></div>
+    <div class="xMark deleteBtn" onclick="deleteItem(${index})" style="background-image: url(&quot;./src/assets/circle-xmark.svg&quot;);"></div>
     </div>`;
   });
+
+  // -- in vsCode (../sr)  work but in gitHub  (./sr) work*/ 
+/* <div class="update-list" .... style="background-image: url(&quot;../src/assets/update-icon.svg&quot;);"></div> 
+/* <div class="xMark deleteBtn" .... style="background-image: url(&quot;../src/assets/circle-xmark.svg&quot;);"></div> */
+
 
   let tasks = document.querySelector(".tasks");
   // add in .taska tag
