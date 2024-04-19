@@ -24,7 +24,7 @@ addTaskBtn.addEventListener("click", function () {
     alert.style.display = "block";
   } else {
     alert.style.display = "none";
-    let getTask = localStorage.getItem("todoTask"); //get value from localStorege (LS) for data add
+    let getTask = localStorage.getItem("todoTask"); //get value from localStorage (LS) for data add
     //!empty then check LS data are created or not
     if (getTask == null) {
       let taskObj = [];
@@ -75,7 +75,7 @@ function showTask() {
 
 
   let tasks = document.querySelector(".tasks");
-  // add in .taska tag
+  // add in .tasks tag
   tasks.innerHTML = htmlList;
 }
 
